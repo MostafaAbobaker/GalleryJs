@@ -20,7 +20,9 @@ rowContainer.addEventListener('click', function(e) {
   if (clickedElement) {
     viewImage.classList.replace('d-none', 'd-grid');
     var selectedImage = clickedElement.querySelector('img').getAttribute('src')
-    viewImage.firstElementChild.style.backgroundImage = 'url(.'+ selectedImage +' )';
+    console.log(selectedImage);
+    
+    viewImage.firstElementChild.style.backgroundImage = 'url('+ selectedImage +' )';
     imageActive = clickedElement.dataset.imageIndex;
   }
   
