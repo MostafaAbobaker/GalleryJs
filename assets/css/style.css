@@ -1,0 +1,57 @@
+.card-image {
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 rgba(0,0,0,0.3);
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card-image-overlay {
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        bottom: 10px;
+        width: 90%;
+    }
+}
+.view-image-gallery {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.7);
+    place-items: center;
+    .box-image {
+        height: 80%;
+        width: 100%;
+        max-width: 600px;
+        background-image: url(../images/portfolio-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        #cancel {
+            position: absolute;
+            top: 0;
+            inset-inline-end: 0;
+        }
+        i {
+            margin: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            &:hover {
+                color: rgb(29, 109, 238);
+            }
+        }
+    }
+}
